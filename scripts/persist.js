@@ -25,6 +25,8 @@ class PersistSheets {
 
         // Restore the sheet positions
         Hooks.on("renderDocumentSheet", app => this.restorePosition(app));
+        Hooks.on("renderActorSheet", app => this.restorePosition(app));
+        Hooks.on("renderItemSheet", app => this.restorePosition(app));
     }
 
     /** The module's ID */
