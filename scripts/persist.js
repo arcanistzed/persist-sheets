@@ -66,17 +66,14 @@ class PersistSheets {
                     .forEach(w => w.setPosition(position));
             });
 
-        const wrappedSetPosition = sheet.setPosition.bind(sheet);
         const debouncedSave = debounce(() => this.save(sheet), 500);
         sheet.setPosition = (...args) => {
             debouncedSave();
-            wrappedSetPosition(...args);
+            sheet.constructor.prototype.setPosition.apply(sheet, args);
         }
-
-        const wrappedClose = sheet.close.bind(sheet);
         sheet.close = (...args) => {
             this.delete(sheet);
-            wrappedClose(...args);
+            sheet.constructor.prototype.close.apply(sheet, args);
         }
 
         this.save(sheet);
