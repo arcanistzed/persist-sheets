@@ -31,12 +31,7 @@
   "languages": [],
   "packs": [],
   "system": [],
-  "dependencies": [
-    {
-      "name": "lib-wrapper",
-      "type": "module"
-    }
-  ],
+  "dependencies": [],
   "manifest": "This is auto replaced",
   "download": "This is auto replaced",
   "manifestPlusVersion": "1.2.0",
