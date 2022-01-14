@@ -95,7 +95,6 @@ class PersistSheets {
         });
     }
 
-
     /** Delete a sheet's position
      * @param {DocumentSheet} sheet
      */
