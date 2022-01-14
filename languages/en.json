@@ -4,6 +4,12 @@
             "restoreOpened": {
                 "name": "Restore Opened",
                 "hint": "Open the sheets on load"
+            },
+            "reset": {
+                "name": "Reset Sheets",
+                "label": "Reset",
+                "hint": "Reset the stored data which contains info on which sheets to open and their position.",
+                "success": "Sheet positioning information has been reset."
             }
         }
     }
