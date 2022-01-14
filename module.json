@@ -1,0 +1,51 @@
+{
+  "name": "persist-sheets",
+  "title": "Persist Sheets",
+  "description": "This module stores your opened sheets and it will reopen, resize, and re-arrange them after you reload or restart Foundry VTT.",
+  "author": "arcanist",
+  "authors": [
+    {
+      "name": "arcanist",
+      "url": "https://arcanistzed.github.io/",
+      "email": "arcanistzed@gmail.com",
+      "discord": "arcanist#4317",
+      "reddit": "u/arcanistzed"
+    }
+  ],
+  "url": "This is auto replaced",
+  "license": "https://github.com/arcanistzed/persist-sheets/blob/main/LICENSE",
+  "readme": "https://github.com/arcanistzed/persist-sheets/blob/main/README.md",
+  "bugs": "https://github.com/arcanistzed/persist-sheets/issues/new/choose",
+  "changelog": "https://github.com/arcanistzed/persist-sheets/blob/main/CHANGELOG.md",
+  "flags": {
+    "allowBugReporter": true
+  },
+  "version": "This is auto replaced",
+  "minimumCoreVersion": "0.7.9",
+  "compatibleCoreVersion": 9,
+  "scripts": [],
+  "esmodules": [
+    "scripts/persist.js"
+  ],
+  "styles": [],
+  "languages": [],
+  "packs": [],
+  "system": [],
+  "dependencies": [
+    {
+      "name": "lib-wrapper",
+      "type": "module"
+    }
+  ],
+  "manifest": "This is auto replaced",
+  "download": "This is auto replaced",
+  "manifestPlusVersion": "1.2.0",
+  "media": [
+    {
+      "type": "video",
+      "url": "https://cdn.discordapp.com/attachments/734095524822777976/931581476829556796/Peek_2022-01-14_11-11.mp4",
+      "loop": true,
+      "caption": "Persist opened sheets and their positions after reloading the browser."
+    }
+  ]
+}
