@@ -65,8 +65,9 @@ class PersistSheets {
             });
 
         const wrappedSetPosition = sheet.setPosition.bind(sheet);
+        const debouncedSave = debounce(() => this.save(sheet), 500);
         sheet.setPosition = (...args) => {
-            this.save(sheet);
+            debouncedSave();
             wrappedSetPosition(...args);
         }
 
