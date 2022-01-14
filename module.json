@@ -28,7 +28,13 @@
     "scripts/persist.js"
   ],
   "styles": [],
-  "languages": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    }
+  ],
   "packs": [],
   "system": [],
   "dependencies": [],

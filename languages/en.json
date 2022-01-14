@@ -1,0 +1,10 @@
+{
+    "persist-sheets": {
+        "settings": {
+            "restoreOpened": {
+                "name": "Restore Opened",
+                "hint": "Open the sheets on load"
+            }
+        }
+    }
+}

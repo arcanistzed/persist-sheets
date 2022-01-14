@@ -1,15 +1,13 @@
+import registerSettings from "./settings.js";
+
 /**
  * @class PersistSheets
  */
-class PersistSheets {
+export default class PersistSheets {
     constructor() {
         Hooks.on("init", () => {
             // Register settings
-            game.settings.register(PersistSheets.ID, "sheetStorage", {
-                scope: "client",
-                config: false,
-                type: Object,
-            });
+            registerSettings();
 
             // Add the module's API
             game.modules.get(PersistSheets.ID).api = PersistSheets;
@@ -21,12 +19,15 @@ class PersistSheets {
         });
 
         // Restore the opened sheets
-        Hooks.on("ready", () => this.restoreOpened());
+        Hooks.on("ready", () => {
+            if (game.settings.get(PersistSheets.ID, "restoreOpened")) this.restoreOpened()
+        });
 
         // Restore the sheet positions
-        Hooks.on("renderDocumentSheet", app => this.restorePosition(app));
-        Hooks.on("renderActorSheet", app => this.restorePosition(app));
-        Hooks.on("renderItemSheet", app => this.restorePosition(app));
+        const restorePosition = app => this.restorePosition(app);
+        Hooks.on("renderDocumentSheet", restorePosition);
+        Hooks.on("renderActorSheet", restorePosition);
+        Hooks.on("renderItemSheet", restorePosition);
     }
 
     /** The module's ID */
