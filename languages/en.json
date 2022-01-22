@@ -10,6 +10,10 @@
                 "label": "Reset",
                 "hint": "Reset the stored data which contains info on which sheets to open and their position.",
                 "success": "Sheet positioning information has been reset."
+            },
+            "keepClosedSheets": {
+                "name": "Keep Closed Sheets",
+                "hint": "Store sheet position even after it has been closed."
             }
         }
     }

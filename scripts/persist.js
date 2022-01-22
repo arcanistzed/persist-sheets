@@ -73,7 +73,7 @@ export default class PersistSheets {
             sheet.constructor.prototype.setPosition.apply(sheet, args);
         }
         sheet.close = (...args) => {
-            this.delete(sheet);
+            if (!game.settings.get(PersistSheets.ID, "keepClosedSheets")) this.delete(sheet);
             sheet.constructor.prototype.close.apply(sheet, args);
         }
 

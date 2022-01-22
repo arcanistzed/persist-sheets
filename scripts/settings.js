@@ -29,4 +29,12 @@ export default function registerSettings() {
         type: Boolean,
         default: true,
     });
+    game.settings.register(PersistSheets.ID, "keepClosedSheets", {
+        name: game.i18n.localize("persist-sheets.settings.keepClosedSheets.name"),
+        hint: game.i18n.localize("persist-sheets.settings.keepClosedSheets.hint"),
+        scope: "client",
+        config: true,
+        type: Boolean,
+        default: false,
+    });
 }
