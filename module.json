@@ -2,10 +2,10 @@
   "name": "persist-sheets",
   "title": "Persist Sheets",
   "description": "This module stores your opened sheets and it will reopen, resize, and re-arrange them after you reload or restart Foundry VTT.",
-  "author": "arcanist",
+  "author": "Arcanist",
   "authors": [
     {
-      "name": "arcanist",
+      "name": "Arcanist",
       "url": "https://arcanistzed.github.io/",
       "email": "arcanistzed@gmail.com",
       "discord": "arcanist#4317",
