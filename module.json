@@ -23,11 +23,9 @@
   "version": "This is auto replaced",
   "minimumCoreVersion": "0.8.9",
   "compatibleCoreVersion": 9,
-  "scripts": [],
   "esmodules": [
     "scripts/persist.js"
   ],
-  "styles": [],
   "languages": [
     {
       "lang": "en",
@@ -35,9 +33,6 @@
       "path": "languages/en.json"
     }
   ],
-  "packs": [],
-  "system": [],
-  "dependencies": [],
   "manifest": "This is auto replaced",
   "download": "This is auto replaced",
   "manifestPlusVersion": "1.2.0",
