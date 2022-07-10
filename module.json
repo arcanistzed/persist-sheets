@@ -1,8 +1,8 @@
 {
+  "id": "persist-sheets",
   "name": "persist-sheets",
   "title": "Persist Sheets",
   "description": "This module stores your opened sheets and it will reopen, resize, and re-arrange them after you reload or restart Foundry VTT.",
-  "author": "Arcanist",
   "authors": [
     {
       "name": "Arcanist",
@@ -21,8 +21,12 @@
     "allowBugReporter": true
   },
   "version": "This is auto replaced",
+  "compatibility": {
+    "minimum": "9",
+    "verified": "10"
+  },
   "minimumCoreVersion": "0.8.9",
-  "compatibleCoreVersion": "9",
+  "compatibleCoreVersion": "10",
   "esmodules": [
     "scripts/persist.js"
   ],
