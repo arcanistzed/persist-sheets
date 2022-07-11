@@ -24,6 +24,7 @@ export default function registerSettings() {
 		scope: "client",
 		config: false,
 		type: Object,
+		default: {},
 	});
 
 	game.settings.register(PersistSheets.ID, "restoreOpened", {
