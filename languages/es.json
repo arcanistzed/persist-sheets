@@ -1,0 +1,20 @@
+{
+	"persist-sheets": {
+		"settings": {
+			"restoreOpened": {
+				"name": "Restaurar abierto",
+				"hint": "Abre las hojas al cargar"
+			},
+			"reset": {
+				"name": "Reiniciar Hojas",
+				"label": "Reiniciar",
+				"hint": "Reinicia los datos guardados que contienen información de qué hojas abrir y sus posiciones.",
+				"success": "Se reinicio la información de posición de las hojas."
+			},
+			"keepClosedSheets": {
+				"name": "Mantener las Hojas Cerradas",
+				"hint": "Guarda la posición de la hoja incluso luego de que esta haya sido cerrada."
+			}
+		}
+	}
+}
